@@ -1,0 +1,227 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FD13C88
+P 5500 4900
+F 0 "BT?" V 5755 4950 50  0000 C CNN
+F 1 "6V" V 5664 4950 50  0000 C CNN
+F 2 "" V 5500 4960 50  0001 C CNN
+F 3 "~" V 5500 4960 50  0001 C CNN
+	1    5500 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FD15B32
+P 5950 4900
+F 0 "BT?" V 6205 4950 50  0000 C CNN
+F 1 "6V" V 6114 4950 50  0000 C CNN
+F 2 "" V 5950 4960 50  0001 C CNN
+F 3 "~" V 5950 4960 50  0001 C CNN
+	1    5950 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FD1619B
+P 6400 4900
+F 0 "BT?" V 6655 4950 50  0000 C CNN
+F 1 "6V" V 6564 4950 50  0000 C CNN
+F 2 "" V 6400 4960 50  0001 C CNN
+F 3 "~" V 6400 4960 50  0001 C CNN
+	1    6400 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FD16666
+P 6850 4900
+F 0 "BT?" V 7105 4950 50  0000 C CNN
+F 1 "6V" V 7014 4950 50  0000 C CNN
+F 2 "" V 6850 4960 50  0001 C CNN
+F 3 "~" V 6850 4960 50  0001 C CNN
+	1    6850 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_DPDT S?
+U 1 1 5FD18863
+P 7550 4000
+AR Path="/5FD08B88/5FD18863" Ref="S?"  Part="1" 
+AR Path="/5FD13AC1/5FD18863" Ref="S?"  Part="1" 
+F 0 "S?" H 7550 4393 50  0000 C CNN
+F 1 "BATTERY OPR" H 7550 4484 50  0000 C CNN
+F 2 "" H 7550 4200 50  0001 C CNN
+F 3 "~" H 7550 4200 50  0001 C CNN
+	1    7550 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8750 3700 7750 3700
+Wire Wire Line
+	5300 4900 5200 4900
+$Comp
+L Device:Fuse F?
+U 1 1 5FD1D754
+P 5200 3350
+AR Path="/5FD08B88/5FD1D754" Ref="F?"  Part="1" 
+AR Path="/5FD13AC1/5FD1D754" Ref="F?"  Part="1" 
+F 0 "F?" H 5260 3396 50  0000 L CNN
+F 1 "Lightbulb" H 5260 3305 50  0000 L CNN
+F 2 "" V 5130 3350 50  0001 C CNN
+F 3 "~" H 5200 3350 50  0001 C CNN
+	1    5200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5FD1D92B
+P 4900 2550
+F 0 "J?" H 4818 2225 50  0000 C CNN
+F 1 "POWER INPUT" H 4818 2316 50  0000 C CNN
+F 2 "" H 4900 2550 50  0001 C CNN
+F 3 "~" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 3200 5200 2650
+Wire Wire Line
+	5200 2650 5100 2650
+$Comp
+L Device:D D?
+U 1 1 5FD1F7ED
+P 5650 2450
+F 0 "D?" H 5650 2667 50  0000 C CNN
+F 1 "D" H 5650 2576 50  0000 C CNN
+F 2 "" H 5650 2450 50  0001 C CNN
+F 3 "~" H 5650 2450 50  0001 C CNN
+	1    5650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD20546
+P 5650 2650
+F 0 "R?" V 5765 2650 50  0000 C CNN
+F 1 "51k" V 5856 2650 50  0000 C CNN
+F 2 "" V 5580 2650 50  0001 C CNN
+F 3 "~" H 5650 2650 50  0001 C CNN
+	1    5650 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 2450 5400 2450
+Wire Wire Line
+	5400 2450 5400 2550
+Wire Wire Line
+	5400 2650 5500 2650
+Wire Wire Line
+	5800 2450 5900 2450
+Wire Wire Line
+	5900 2450 5900 2550
+Wire Wire Line
+	5900 2650 5800 2650
+Wire Wire Line
+	5400 2550 5100 2550
+Connection ~ 5400 2550
+Wire Wire Line
+	5400 2550 5400 2650
+Wire Wire Line
+	6250 3600 6250 2550
+Wire Wire Line
+	6250 2550 5900 2550
+Connection ~ 5900 2550
+Wire Wire Line
+	5900 2550 5900 2650
+Wire Wire Line
+	5600 4900 5750 4900
+Wire Wire Line
+	6050 4900 6200 4900
+Wire Wire Line
+	6500 4900 6650 4900
+Wire Wire Line
+	5200 3500 5200 3800
+Wire Wire Line
+	5200 3800 7350 3800
+Connection ~ 5200 3800
+Wire Wire Line
+	5200 3800 5200 4900
+Wire Wire Line
+	6250 3600 7050 3600
+Wire Wire Line
+	6950 4900 7050 4900
+Wire Wire Line
+	7050 4900 7050 3600
+Connection ~ 7050 3600
+Wire Wire Line
+	7050 3600 8750 3600
+$Comp
+L Device:Thermistor_NTC RT2
+U 1 1 5FD2B1CB
+P 7400 2800
+F 0 "RT2" H 7247 2846 50  0000 R CNN
+F 1 "10k NTC" H 7247 2755 50  0000 R CNN
+F 2 "" H 7400 2850 50  0001 C CNN
+F 3 "~" H 7400 2850 50  0001 C CNN
+	1    7400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2950 7400 3300
+Wire Wire Line
+	7400 3300 8750 3300
+$Comp
+L Device:Thermistor_NTC RT1
+U 1 1 5FD2E7B6
+P 6800 3150
+F 0 "RT1" H 6647 3196 50  0000 R CNN
+F 1 "10k NTC" H 6647 3105 50  0000 R CNN
+F 2 "" H 6800 3200 50  0001 C CNN
+F 3 "~" H 6800 3200 50  0001 C CNN
+	1    6800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3300 6800 3500
+Wire Wire Line
+	6800 3500 8750 3500
+Wire Wire Line
+	6800 3000 7000 3000
+Wire Wire Line
+	7000 3000 7000 3400
+Wire Wire Line
+	7000 3400 8750 3400
+Wire Wire Line
+	7600 2650 7600 3200
+Wire Wire Line
+	7400 2650 7600 2650
+Text HLabel 8750 3700 2    50   Output ~ 0
+1:BAT+
+Text HLabel 8750 3600 2    50   Output ~ 0
+2:BAT-
+Text HLabel 8750 3500 2    50   Output ~ 0
+3:RT1A
+Text HLabel 8750 3400 2    50   Output ~ 0
+4:RT1B
+Text HLabel 8750 3300 2    50   Output ~ 0
+5:RT2A
+Wire Wire Line
+	7600 3200 8750 3200
+Text HLabel 8750 3200 2    50   Output ~ 0
+6:RT2B
+$EndSCHEMATC
